@@ -12,7 +12,7 @@ My Blogs
 
 <div class="row">
   <div class="col-sm-4">
-    <img src="/blogspotn/Blogging/media/ {{ blog.blog_image }}" width="100%" alt="">
+    <img src="/blogspotn/Blogging/media/{{ blog.blog_image }}" width="100%" alt="">
   </div>
   <div class="col-sm-8">
     <p>{{ blog.blog_content|range_filter|linebreaks }}
