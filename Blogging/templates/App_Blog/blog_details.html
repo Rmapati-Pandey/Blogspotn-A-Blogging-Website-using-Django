@@ -18,7 +18,7 @@ Blog Details
     <h6>{{ blog.liked_blog.count }} Likes | {{ blog.blog_comment.count }} Comments</h6>
   </div>
   <div class="col-sm-6">
-    <img src="/blogspotn/Blogging/media/{{ blog.blog_image }}" width="100%" alt="error image upload">
+    <img src="{{ blog.blog_image }}" width="100%" alt="error image upload">
   </div>
   {{ blog.blog_content|linebreaks }}
 </div>

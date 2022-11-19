@@ -40,6 +40,7 @@ class CreateBlog(CreateView,LoginRequiredMixin):
            blog_obj.author=self.request.user
            title=blog_obj.blog_title
            blog_obj.slug=title.replace(" ","-")+ "-" + str(uuid.uuid4())
+           image=blog_obj.blog_image
            blog_obj.save() 
            return HttpResponsePermanentRedirect(reverse('index'))
 
